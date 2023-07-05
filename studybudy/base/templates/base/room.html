@@ -1,0 +1,13 @@
+{% extends 'main.html' %} {% block content %}
+<h1>Room page</h1>
+{% if room %}
+<div>
+  <h5>{{room.id}}</h5>
+  <h4>{{room.name}}</h4>
+  <p>{{room.description}}</p>
+  <p>{{room.updated}}</p>
+  <p>{{room.created}}</p>
+</div>
+{% else %}
+<h5>No room found</h5>
+{% endif %} {{pk}} {% endblock content %}
